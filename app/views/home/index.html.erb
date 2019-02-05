@@ -1,0 +1,14 @@
+<h1> <em> Bienvenue dans notre page </em> </h1>
+<h2> Voici la liste de tous les gossips </h2>
+<ul>
+<%i=1%>	
+<% @a.each do |p|%>
+<li>
+<h3><%= "Gossip#{i}" %></h3>
+ <strong>Auteur: <strong><%= p.user.first_name %><br>
+ <strong>Title: <strong><%= p.title %><br>
+</li>  
+ <%= link_to 'voir plus', "Gossip_#{i}" %>
+  <% i+=1 %> 
+  <%end%>
+</ul> 

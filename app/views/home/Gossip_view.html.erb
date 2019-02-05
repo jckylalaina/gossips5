@@ -1,0 +1,13 @@
+<h1><%= @gossip %></h1>
+<% x = @a.find(@id) %>
+<b><dt><i>Auteur:</i></dt></b>
+<dd>Nom:<%=  x.user.first_name %></dd>
+<dd>Prenom: <%=  x.user.last_name %></dd>
+<dd>age: <%=  x.user.age %></dd>
+<dd>email: <%=  x.user.email %></dd>
+<dd>description: <%=  x.user.description %></dd>
+<b><dt><i>Gossip:</i></dt></b>
+<dd>titre: <%= x.title %></dd>
+<dd>contenue:<%= x.content %> </dd>
+
+	
