@@ -1,5 +1,6 @@
-<h1><%= @gossip %></h1>
-<% x = @a.find(@id) %>
+
+<h1>Gossip<%= @id %></h1>
+<% x = @gossip %>
 <b><dt><i>Auteur:</i></dt></b>
 <dd>Nom:<%=  x.user.first_name %></dd>
 <dd>Prenom: <%=  x.user.last_name %></dd>
@@ -9,5 +10,4 @@
 <b><dt><i>Gossip:</i></dt></b>
 <dd>titre: <%= x.title %></dd>
 <dd>contenue:<%= x.content %> </dd>
-
-	
+<p><%= link_to 'éditer', "/gossips/#{@id}/edit" %></p>

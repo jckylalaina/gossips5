@@ -1,0 +1,10 @@
+<h1>Gossip<%= @id %> edit</h1>
+  <%= form_tag('/posts') do %>
+
+<%= field_set_tag do %>
+  <p><%= text_field_tag 'name' %></p>
+  <p><%= text_field_tag 'name' %></p>
+<% end %>
+<%= button_tag 'envoyer' %>
+
+    <% end %>
